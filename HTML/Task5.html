@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .label-normal {
+        font-weight: normal;
+      }
+      label {
+        font-weight: bold;
+        text-align: center;
+      }
+      .task5 {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .task5i {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: blue; text-align: center">Registration Form</h1>
+    <!-- <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <label for="contact">Contact</label>
+      <input type="number" id="contact" />
+    </form> -->
+    <div class="task5">
+      <table>
+        <tr>
+          <td class="task5i">
+            <label for="First Name">First Name</label>
+          </td>
+          <td>
+            <input type="text" id="First Name" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Last Name">Last Name</label>
+          </td>
+          <td>
+            <input type="text" id="Last Name" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Email">Email</label>
+          </td>
+          <td>
+            <input type="email" id="Email" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Password">Password</label>
+          </td>
+          <td>
+            <input type="password" id="Password" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Re-enter Password">Re-enter Password</label>
+          </td>
+          <td>
+            <input type="password" id="Re-enter Password" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Gender">Gender</label>
+          </td>
+          <td class="gender-column">
+            <label class="label-normal" for="Male">
+              <input type="radio" id="Male" name="gender" value="male" /> Male
+            </label>
+            <br />
+            <label class="label-normal" for="Female">
+              <input type="radio" id="Female" name="gender" value="female" />
+              Female
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Age">Age</label>
+          </td>
+          <td>
+            <input type="number" id="Age" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Phone Number">Phone Number</label>
+          </td>
+          <td>
+            <input type="number" id="Phone Number" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Address">Address</label>
+          </td>
+          <td>
+            <input type="text" id="Address" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="State">State</label>
+          </td>
+          <td>
+            <input type="text" id="State" />
+          </td>
+        </tr>
+        <tr>
+          <td class="task5i">
+            <label for="Country">Country</label>
+          </td>
+          <td>
+            <select id="Country" required>
+              <option value="" disabled selected>Choose your country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <!-- Add more countries as needed -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Languages">Languages Known</label></td>
+          <td>
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="english"
+                name="languages"
+                value="english"
+              />
+              English</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="kannada"
+                name="languages"
+                value="kannada"
+              />
+              Kannada</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="hindi"
+                name="languages"
+                value="hindi"
+              />
+              Hindi</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="telugu"
+                name="languages"
+                value="telugu"
+              />
+              Telugu</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center">
+            <label class="label-normal"
+              ><input type="checkbox" id="declaration" required /> Hereby I
+              declare all the given details are true</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right">
+            <p>
+              Log in to
+              <a href="https://ethnus.com/" target="_blank">Ethnus</a>
+              website
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="text-align: center">
+      <button type="submit" class="register-btn">Register</button>
+    </div>
+  </body>
+</html>

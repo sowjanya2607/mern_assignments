@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Navigation Bar</title>
+    <h3>Vertical Navigation Bar</h3>
+    <style>
+      .nav-container1 {
+        width: 200px; /* Adjust the width as needed */
+        background-color: skyblue; /* Background color of the navigation bar */
+        border: 2px solid black;
+      }
+      .nav-container1 ul {
+        list-style-type: none; /* Remove default list style */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+      }
+      .nav-container1 li {
+        padding: 10px; /* Padding inside each navigation item */
+        margin-bottom: 2px; /* Space between each navigation item */
+      }
+      .nav-container1 li a {
+        color: blue; /* Text color */
+        text-decoration: none; /* Remove underline from links */
+        display: block; /* Make the entire item clickable */
+      }
+      .nav-container1 li a:hover {
+        background-color: orange; /* Background color on hover */
+        color: white; /* Text color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container1">
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+      </ul>
+    </div>
+  </body>
+  <h3>Horizontal Navigation Bar</h3>
+  <style>
+    .nav-container2 {
+      background-color: rgb(
+        209,
+        206,
+        206
+      ); /* Background color of the navigation bar */
+      width: fit-content;
+    }
+    .nav-container2 ul {
+      list-style-type: none; /* Remove default list style */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Use flexbox to align items horizontally */
+    }
+    .nav-container2 li {
+      padding: 14px 20px; /* Padding inside each navigation item */
+      border-right: 1px solid blue;
+    }
+    .nav-container2 li a {
+      color: blue; /* Text color */
+      text-decoration: none; /* Remove underline from links */
+      display: block; /* Make the entire item clickable */
+    }
+    .nav-container2 li a:hover {
+      background-color: grey; /* Background color on hover */
+      color: white; /* Text color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container2">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">Bootstrap</a></li>
+    </ul>
+  </div>
+</body>
+</html>
+

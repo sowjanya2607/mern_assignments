@@ -1,0 +1,40 @@
+body {
+  border: 2px solid black;
+  height: 70vh;
+  width: 50%;
+  margin: 50px auto 0; /* Center the body element */
+  position: relative; /* Positioning context for sidenav */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 25px 20px; /* Increase the padding to make the bars taller */
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-top-right-radius: 10px; /* Soften the corners */
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px; /* Space below each bar */
+}
+
+.sidenav a:hover {
+  margin-left: 20px;
+}
+
+.main {
+  margin-left: 70px; /* Same width as the sidenav */
+  padding: 20px;
+}
