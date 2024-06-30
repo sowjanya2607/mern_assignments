@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication and Division Calculator</title>
+    <script>
+      function calculate(operation) {
+        // Get the input values
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result;
+
+        // Perform the calculation based on the selected operation
+        if (operation === "multiply") {
+          result = num1 * num2;
+        } else if (operation === "divide") {
+          result = num1 / num2;
+        }
+
+        // Display the result
+        document.getElementById("result").innerText =
+          "The Result Is : " + result;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Multiplication and Division Calculator</h2>
+    <form>
+      <label for="num1">1st Number :</label>
+      <input type="text" id="num1" name="num1" /><br /><br />
+      <label for="num2">2nd Number :</label>
+      <input type="text" id="num2" name="num2" /><br /><br />
+      <input type="button" value="Multiply" onclick="calculate('multiply')" />
+      <input type="button" value="Divide" onclick="calculate('divide')" />
+    </form>
+    <p id="result">The Result Is :</p>
+  </body>
+</html>

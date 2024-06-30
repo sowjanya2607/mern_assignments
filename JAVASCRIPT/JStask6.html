@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+      }
+      .login-container {
+        width: 300px;
+        height: 40vh;
+        padding: 20px;
+        border: 1px solid #dbdbdb;
+        background-color: #f3f2f2;
+        text-align: center;
+      }
+      .input-container {
+        position: relative;
+        margin: 5px 0;
+      }
+      .input-container input[type="text"],
+      .input-container input[type="password"] {
+        width: 100%; /* Ensure all elements have the same width */
+        padding: 10px 10px 10px 35px; /* Add padding to the left for the icon */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+      }
+      .input-container .icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #595858;
+      }
+      .login-container button {
+        width: 100%; /* Ensure all elements have the same width */
+        padding: 10px;
+        background-color: #3897f0;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 20px; /* Increased margin here */
+        margin-top: 20px;
+      }
+      .login-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .login-options .remember-me {
+        display: flex;
+        align-items: center;
+      }
+      .login-options .remember-me input {
+        margin-right: 5px;
+      }
+      .login-options a {
+        color: #3897f0;
+        text-decoration: none;
+      }
+      .signup-link {
+        margin-top: 10px;
+      }
+    </style>
+    <!-- Add the Font Awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Instagram</h1>
+      <form id="loginForm">
+        <div class="input-container">
+          <i class="fas fa-user icon"></i>
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+        <div class="input-container">
+          <i class="fas fa-lock icon"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Log in</button>
+        <div class="login-options">
+          <div class="remember-me">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="signup-link">
+      <p>
+        Don't have an account!
+        <a href="#" style="color: #3897f0; text-decoration: none"
+          >Sign up here.</a
+        >
+      </p>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          const rememberMe = document.getElementById("rememberMe").checked;
+
+          console.log("Username:", username);
+          console.log("Password:", password);
+          console.log("Remember me:", rememberMe);
+
+          // Here you can add your login logic
+          alert("Login attempt with username: " + username);
+        });
+    </script>
+  </body>
+</html>

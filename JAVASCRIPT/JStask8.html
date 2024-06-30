@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      form {
+        background: linear-gradient(to bottom, #f1eaa7, #a83b71);
+        display: inline-block;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.179);
+        width: 100%;
+        
+
+      }
+      .label-normal {
+        font-weight: normal;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      .Insides{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+      }
+
+      .labels{
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+        width: 350px;
+      }
+
+      .labelss{
+        display: flex;
+        justify-content: end;
+        padding-right: 5px;
+        width: 208px;
+      }
+      .labelsss{
+        margin-left: 100px;
+        width: 60px;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+      }
+      .Insides1{
+        display: flex;
+        margin-left: 90px;
+      }
+      
+      .Insidess{
+        display: flex;
+        align-items: baseline;
+        justify-content: start;
+       
+      }
+      label {
+        font-weight: bold;
+        
+        display: block;
+        text-align: left;
+        margin: 5px 0;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+      
+      .poor {
+        color: red;
+        float: right;
+        font-size: 14px;
+        padding-left: 5px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn {
+        background-color: rgb(247, 7, 7);
+        color: white;
+        padding: 15px 20px;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 30px;
+       margin-left: 700px;
+       text-decoration: underline;
+        
+      }
+      .btn:hover {
+        opacity: 1;
+        background-color: rgb(188, 5, 5);
+      }
+    </style>
+  </head>
+  <body>
+    <form id="registrationForm">
+      <h1 style="color: rgb(50, 50, 225); text-align: center">
+        Registration form
+      </h1>
+      <div class="Insides">
+        <label class="labels" for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="email">Email</label>
+        <input type="text" id="email" name="email" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="repassword">Re-enter Password</label>
+        <input type="password" id="repassword" name="repassword" />
+        <span class="poor" id="passwordMismatch">POOR OR MISMATCH</span>
+      </div class="Insides">
+
+      <div class="Insidess">
+        <label class="labelsss">Gender</label class="labels">
+        <label class="labelsss" for="male"><input type="radio" id="male" name="gender" value="male" />Male</label>
+        <label class="labelsss" for="female"><input type="radio" id="female" name="gender" value="female" />Female</label>
+        
+      </div class="Insidess">
+      
+      <div class="Insides">
+        <label class="labels" for="age">Age</label>
+        <input type="number" id="age" name="age" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labels" for="address">Address</label>
+        <textarea id="address" name="address" style="height: 100px"></textarea>
+        <span class="poor">POOR</span>
+      </div class="Insides">
+      
+      <div class="Insides">
+        <label class="labels" for="state">State</label>
+        <input type="text" id="state" name="state" />
+        <span class="poor">POOR</span>
+      </div class="Insides">
+
+      <div class="Insides">
+        <label class="labelss" for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Choose your country</option>
+          <option value="India">India</option>
+          <!-- Add other countries as needed -->
+        </select>
+      </div class="Insides">
+
+      <div class="Insides1">
+        <label for="Languages">Languages Known</label>
+        <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="english"
+                name="languages"
+                value="english"
+              />
+              English</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="kannada"
+                name="languages"
+                value="kannada"
+              />
+              Kannada</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="hindi"
+                name="languages"
+                value="hindi"
+              />
+              Hindi</label
+            >
+            <label class="label-normal"
+              ><input
+                type="checkbox"
+                id="telugu"
+                name="languages"
+                value="telugu"
+              />
+              Telugu</label
+            >
+      </div class="Insides1">
+
+      <br />
+      <div style="margin-left: 90px;">
+        <input type="checkbox" id="declare" name="declare"/> Hereby I declare all
+        the given details are true
+      </div>
+      <p style="margin-left: 850px;">
+        Log in to
+        <a href="https://ethnus.com/" target="_blank" >Ethnus</a>
+        website
+      </p>
+      <input
+        type="button"
+        class="btn"
+        value="REGISTER"
+        onclick="validateForm()"
+      />
+    </form>
+
+    <script>
+      function validateForm() {
+        // Example validation logic
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var repassword = document.getElementById("repassword").value;
+        var age = document.getElementById("age").value;
+        var phone = document.getElementById("phone").value;
+        var address = document.getElementById("address").value;
+        var state = document.getElementById("state").value;
+        var country = document.getElementById("country").value;
+        var declare = document.getElementById("declare").checked;
+
+        if (
+          !fname ||
+          !lname ||
+          !email ||
+          !password ||
+          !repassword ||
+          !age ||
+          !phone ||
+          !address ||
+          !state ||
+          !country ||
+          !declare
+        ) {
+          alert("Please fill all fields correctly.");
+          return false;
+        }
+
+        if (password !== repassword) {
+          document.getElementById("passwordMismatch").style.display = "block";
+          return false;
+        } else {
+          document.getElementById("passwordMismatch").style.display = "none";
+        }
+
+        alert("Form submitted successfully!");
+      }
+    </script>
+  </body>
+</html>
